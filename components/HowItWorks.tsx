@@ -262,15 +262,19 @@ export default function HowItWorks() {
                 isVisible={visibleSteps.has(3)}
                 isActive={activeStep === 3}
               >
-                <div className="relative mt-6">
-                  <Button 
-                    href="#plans" 
-                    variant="primary" 
-                    className="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
-                  >
-                    Explore Plans
-                  </Button>
-                </div>
+             <div className="relative mt-6">
+  <Button
+    variant="primary"
+    className="shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("plans")?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Explore Plans
+  </Button>
+</div>
+
               </Step>
             </div>
           </div>
