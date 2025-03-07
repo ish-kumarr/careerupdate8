@@ -23,7 +23,9 @@ export default function Home() {
       <section id="services">
         <Services />
       </section>
+      <section id="plans">
       <Plans />
+      </section>
       <MobilePlans />
       <section id="success-stories">
         <SuccessStories />
